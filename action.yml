@@ -1,0 +1,27 @@
+name: 'Altostra Login'
+description: 'GitHub Action to login against an Altostra account'
+author: 'Altostra'
+branding:
+  icon: 'triangle'
+  color: 'purple'
+
+inputs:
+  api-token:  # id of input
+    description: 'Your Altostra API token from https://app.altostra.com/settings/tokens'
+    required: true
+
+outputs:
+  random-number:
+    description: "Random number"
+    value: ${{ steps.random-number-generator.outputs.random-id }}
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo Hello ${{ inputs.who-to-greet }}.
+      shell: bash
+    - id: random-number-generator
+      run: echo "::set-output name=random-id::$(echo $RANDOM)"
+      shell: bash
+    - run: ${{ github.action_path }}/goodbye.sh
+      shell: bash
