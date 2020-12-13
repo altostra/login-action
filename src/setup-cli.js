@@ -7,12 +7,9 @@ async function setupCli() {
         console.log(`Installing @altosra/cli`)
         await exec.exec('sudo npm i -g @altostra/cli');
 
-        const token = core.getInput('api-token');
-        if (!!token) {
-            throw new Error("API Token can not be empty")
-        }
+        const token = core.getInput('api-token', { required: true });
 
-        console.log(`Setting up credentials`)
+        console.log(`Setting up credentials:`)
         await exec.exec(`alto api-key set ${token}`);
 
         const payload = JSON.stringify(github.context.payload, undefined, 2)
