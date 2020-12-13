@@ -2,7 +2,7 @@
   "name": "altostra-login-action",
   "version": "1.0.0",
   "description": "GitHub Action to login against an Altostra account.",
-  "main": "index.js",
+  "main": "src/setup-cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
