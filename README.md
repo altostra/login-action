@@ -1,8 +1,9 @@
+![altostra-integration](./resources/img/github-actions-ci-cd-altostra.png)
 ## About
 
 GitHub Action to login against an Altostra account.
 
-See also
+**See also**
 * [push-deploy-action](https://github.com/altostra/push-deploy-action/tree/alpha)
 
 ## Usage
@@ -12,7 +13,7 @@ Following inputs can be used as step.with keys
 
 | Name  | Type  | Required | Description  |
 |:-:|:-:|:-:|:-:|
-| api-token  | string  |  Yes |  Your Altostra API token from https://app.altostra.com/settings/tokens. |
+| api-token  | string  |  Yes |  Your Altostra API token from [Altostra settings](https://app.altostra.com/settings/tokens). |
 
 ## Example usage
 ```yaml
