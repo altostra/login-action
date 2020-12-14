@@ -6,14 +6,26 @@ See also
 * [push-deploy-action](https://github.com/altostra/push-deploy-action/tree/alpha)
 
 ## Usage
-## Inputs
 
-### `api-token`
+### Inputs
+Following inputs can be used as step.with keys
 
-**Required** Your Altostra API token from https://app.altostra.com/settings/tokens.
+| Name  | Type  | Required | Description  |
+|:-:|:-:|:-:|:-:|
+| api-token  | string  |  Yes |  Your Altostra API token from https://app.altostra.com/settings/tokens. |
 
 ## Example usage
+```yaml
+on: [push]
 
-uses: actions/altostra-login-action@v1.1
-with:
-  api-token: ${{ secrets.ALTO_API_TOKEN }}
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A basic Altostra job
+    steps:
+    - uses: actions/checkout@v2
+    - id: Login
+      uses: altostra/altostra-login-action@v1-i
+      with:
+        api-token: "${{ secrets.ALTO_API_TOKEN }}"
+```
