@@ -26,7 +26,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Login
-      uses: altostra/altostra-login-action@v1
+      uses: altostra/login-action@v1
       with:
         api-token: "${{ secrets.ALTO_API_TOKEN }}"
 ```
