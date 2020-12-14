@@ -4,7 +4,7 @@
 GitHub Action to login against an Altostra account.
 
 **See also**
-* [push-deploy-action](https://github.com/altostra/push-deploy-action/tree/alpha)
+* [push-deploy-action](https://github.com/altostra/push-deploy-action)
 
 ## Usage
 
