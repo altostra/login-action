@@ -1,6 +1,11 @@
-# altostra-login-action
+## About
+
 GitHub Action to login against an Altostra account.
 
+See also
+* [push-deploy-action](https://github.com/altostra/push-deploy-action/tree/alpha)
+
+## Usage
 ## Inputs
 
 ### `api-token`

@@ -9,11 +9,9 @@ async function setupCli() {
 
         const token = core.getInput('api-token', { required: true });
         // Register secret to ensure it's masked in logs
-
-        //TODO: just for testing
-        console.log(`Setting up credentials - 1: ${token}`)
         core.setSecret(token)
-        console.log(`Setting up credentials - 2: ${token}`)
+
+        console.log(`Setting up credentials`)
 
         await exec.exec(`alto api-key set ${token}`);
     } catch (error) {
