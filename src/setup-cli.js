@@ -7,7 +7,7 @@ async function setupCli() {
         console.log(`Installing @altosra/cli`)
         await exec.exec('sudo npm i -g @altostra/cli');
 
-        const token = core.getInput('api-tokenx', { required: true });
+        const token = core.getInput('api-token', { required: true });
         // Register secret to ensure it's masked in logs
 
         //TODO: just for testing
