@@ -19,7 +19,6 @@
   "homepage": "https://github.com/altostra/altostra-login-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/exec": "^1.0.4",
-    "@actions/github": "^4.0.0"
+    "@actions/exec": "^1.0.4"
   }
 }
