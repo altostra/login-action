@@ -30,7 +30,7 @@ jobs:
       with:
         api-token: "${{ secrets.ALTO_API_TOKEN }}"
     - id: Push-Deploy
-      uses: altostra/push-deploy-action@v1-b
+      uses: altostra/push-deploy-action@v1
       with:
         env-name: Production
         instance-name: githubTest
