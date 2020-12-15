@@ -1,4 +1,3 @@
-![altostra-integration](./resources/img/github-actions-ci-cd-altostra.png)
 ## About
 
 Use this Action to log into your Altostra account and store credentials for later use with other Altostra Actions.
