@@ -1,0 +1,24 @@
+{
+  "name": "altostra-login-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to login against an Altostra account.",
+  "main": "src/setup-cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altostra/altostra-login-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/altostra/altostra-login-action/issues"
+  },
+  "homepage": "https://github.com/altostra/altostra-login-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.4"
+  }
+}

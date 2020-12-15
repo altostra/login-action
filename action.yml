@@ -1,0 +1,15 @@
+name: 'Altostra Login'
+description: 'Log in to Altostra account.'
+author: 'Altostra'
+branding:
+  icon: 'triangle'
+  color: 'purple'
+
+inputs:
+  api-token:  # id of input
+    description: 'An Altostra API token from https://app.altostra.com/settings/tokens'
+    required: true
+
+runs:
+  using: "node12"
+  main: 'src/setup-cli.js'
