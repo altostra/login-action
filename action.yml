@@ -1,5 +1,5 @@
 name: 'Altostra Login'
-description: 'GitHub Action to login against an Altostra account'
+description: 'Log in to Altostra account.'
 author: 'Altostra'
 branding:
   icon: 'triangle'
@@ -7,7 +7,7 @@ branding:
 
 inputs:
   api-token:  # id of input
-    description: 'Your Altostra API token from https://app.altostra.com/settings/tokens'
+    description: 'An Altostra API token from https://app.altostra.com/settings/tokens'
     required: true
 
 runs:

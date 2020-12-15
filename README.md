@@ -1,7 +1,7 @@
 ![altostra-integration](./resources/img/github-actions-ci-cd-altostra.png)
 ## About
 
-GitHub Action to login against an Altostra account.
+Use this Action to log into your Altostra account and store credentials for later use with other Altostra Actions.
 
 **See also**
 * [push-deploy-action](https://github.com/altostra/push-deploy-action)
